@@ -12,7 +12,7 @@ module.exports = (env = {}) => {
 
     const mainConfig = {
         entry: {
-            main: path.join(__dirname, '../src/electron/index.ts')
+            main: path.join(__dirname, `../src/electron/${isProduction ? "index.ts" : "index.dev.ts"}`)
         },
         externals: [
             ...Object.keys(dependencies || {})
