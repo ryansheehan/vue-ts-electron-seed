@@ -1,8 +1,8 @@
-export * from "vue-property-decorator";
-export { mapActions, mapGetters, mapState } from "vuex"
+export {Component, Prop, Inject, Model, Provide, Watch} from "vue-property-decorator";
+export { mapActions, mapGetters, mapState } from "vuex";
 
 import { createDecorator } from "vue-class-component";
-import Vue, {ComponentOptions, ComputedOptions} from "vue"
+import Vue, {ComponentOptions, ComputedOptions} from "vue";
 
 export const NoCache:any = createDecorator((options:ComponentOptions<Vue>, key:string) => {
   // component options should be passed to the callback
