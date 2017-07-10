@@ -156,7 +156,7 @@ function electronLog(data, color) {
 }
 
 function startElectron() {
-    electronProcess = spawn(electron, ['--inspect=5858', path.join(__dirname, '../dist/main.js')]);
+    electronProcess = spawn(electron, ['--inspect=5858', path.join(__dirname, '../dist/electron/main.js')]);
 
     electronProcess.stdout.on('data', data => electronLog(data, 'blue'));
     electronProcess.stderr.on('data', data => electronLog(data, 'red'));

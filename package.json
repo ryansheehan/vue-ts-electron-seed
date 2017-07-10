@@ -2,14 +2,15 @@
     "name": "vue-ts-electron-seed",
     "version": "1.0.0",
     "description": "A Vue Electron project",
-    "author": "",
+    "author": "Ryan Sheehan",
+    "main": "./dist/electron/main.js",
     "private": true,
     "scripts": {
         "start": "npm run dev",
         "dev": "node build/dev-runner.js",
         "build": "node build/build.js && electron-builder",
         "build:dir": "node build/build.js && electron-builder --dir",
-        "clean": "rimraf dist/",
+        "clean": "rimraf dist/ && rimraf bin/",
         "pack": "npm run pack:electron && npm run pack:renderer",
         "pack:electron": "webpack -p --env.production --progress --colors --config ./build/webpack.electron.conf.js",
         "pack:renderer": "webpack -p --progress --colors --config ./build/webpack.prod.conf.js",
@@ -24,7 +25,7 @@
             "output": "bin"
         },
         "files": [
-            "dist/**/*"
+            "dist/electron/**/*"
         ],
         "dmg": {
             "contents": [
@@ -68,7 +69,7 @@
         "copy-webpack-plugin": "^4.0.1",
         "css-loader": "^0.28.3",
         "devtron": "^1.4.0",
-        "electron": "^1.6.11",
+        "electron": "^1.7.4",
         "electron-builder": "^19.13.0",
         "electron-debug": "^1.2.0",
         "electron-devtools-installer": "^2.2.0",
@@ -80,11 +81,13 @@
         "friendly-errors-webpack-plugin": "^1.1.3",
         "html-webpack-plugin": "^2.28.0",
         "http-proxy-middleware": "^0.17.3",
+        "material-icons": "^0.1.0",
         "multispinner": "^0.2.1",
         "opn": "^5.0.0",
         "optimize-css-assets-webpack-plugin": "^2.0.0",
         "promise-polyfill": "^6.0.2",
         "rimraf": "^2.6.0",
+        "roboto-fontface": "^0.8.0",
         "semver": "^5.3.0",
         "shelljs": "^0.7.8",
         "typescript": "^2.4.1",

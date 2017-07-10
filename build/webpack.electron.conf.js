@@ -56,7 +56,7 @@ module.exports = (env = {}) => {
         output: {
             filename: '[name].js',
             libraryTarget: 'commonjs2',
-            path: path.join(__dirname, '../dist')
+            path: config.build.assetsRoot
         },
         plugins: [
             new webpack.NoEmitOnErrorsPlugin(),
