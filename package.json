@@ -18,7 +18,6 @@
         "tsc:noEmit": "npm run tsc -- --noEmit",
         "webpack": "webpack"
     },
-    "main": "dist/main.js",
     "build": {
         "productName": "vue-ts-electron-seed",
         "appId": "com.github.ryansheehan.vue-ts-electron-seed",

@@ -29,6 +29,6 @@
 }
 
 .logo-container img {
-    max-height: 200px;
+    max-height: 140px;
 }
 </style>
