@@ -1,0 +1,11 @@
+import "roboto-fontface/fonts/roboto/Roboto-Black.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-BlackItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-Bold.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-BoldItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-Light.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-LightItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-Medium.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-MediumItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-RegularItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-RegularItalic.woff2";
+import "roboto-fontface/fonts/roboto/Roboto-ThinItalic.woff2";
